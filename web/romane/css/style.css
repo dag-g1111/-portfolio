@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+header{
+    z-index: 99;
+    position: relative;
+    background-color: #fff5de;
+    
+}
+.hWrap{
+    margin: 0 auto;
+    position: relative;
+    width: 1320px;
+    height: 100px;
+}
+h1{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+h1 img{
+    width: 210px;
+    height: 54px;
+}
+.util{
+    color: #2eb9fa;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    justify-content: space-between;
+}
+.util li{
+    font-size: 14px;
+    margin-left: 15px;
+}
+.util li:first-child{
+    margin-left: 0;
+}
+.util .srch{
+    position: relative;
+    border-radius: 25px;
+    background-color: #2eb9fa;
+    width: 125px;
+    font-size: 14px;
+    
+}
+.srch input{
+    display: none;
+}
+.util .srch button{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+.util li img{
+    width: 15px;
+    height: 15px;
+}
+.util .icon{
+    margin-left: 5px;
+}
+
+.gnb{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: flex;
+    color: #2eb9fa;
+    width: 80%;
+}
+.gnb .tit{
+    font-size: 18px;
+}
+
+.gnb>li{
+    width: 25%;
+    position: relative;
+    left: 50px;
+    top: 15px;
+    text-align: left;
+}
+.sub{
+    background-color: #ffdaa6;
+    font-size: 16px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    line-height: 35px;
+    display: none;
+
+}
+.Bn{}
+.slidBn{
+    margin: 0 auto;
+    position: relative;
+}
+.slidBn .box img{
+    width: 1920px;
+    height: 500px;
+    text-align: center;
+}
+.nxt,.prv{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-50%);
+    height: 50px;
+    border: 0;
+    background-color: rgba(225,225,225,0.4);
+    z-index: 20;
+}
+.prv{
+    left: 20%;
+}
+.prv:after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #2eb9fa;
+    border-left: 2px solid #2eb9fa;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 18px;
+    bottom: 13px;
+
+}
+.nxt{
+    right: 20%;
+}
+.nxt:after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #2eb9fa;
+    border-right: 2px solid #2eb9fa;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 18px;
+    bottom: 13px;
+    
+}
+.con{
+   margin-top: 110px;
+    background-color: #ffdb86;
+    border: 4px solid #2eb9fa;
+}
+.conWrap{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.conWrap .newBox{
+    margin-top: 24px;
+    width: 400px;
+    height: 350px;
+    background-color: #ffcfcf;
+    margin-bottom: 24px;
+    box-shadow: 1px 4px 4px  rgba(0,0,0,0.2);
+}
+.conWrap .newBox .foto{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    
+    transition: all 2s;
+}
+/*transition 안먹음*/
+.conWrap .newBox .foto img{
+    width: 100%;
+    height: 300px;
+    
+    
+}
+.newBox .foto:hover img{
+    transition: scale(1.5);
+}
+.conWrap .bearBox{
+    margin-top: 24px;
+    width: 400px;
+    height: 350px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.conWrap .bearBox .foto img{
+    width:80%;
+    
+}
+.data .txt h2{
+    margin-top: 10px;
+}
+.data .txt h2,p{
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.md{
+    
+    margin-top: 110px;
+    position: relative;
+    
+}
+h3{
+    width: 216px;
+    height: 40px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.slick-dots{
+    
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+.slick-dots li{
+    margin: 0 20px;
+}
+.slick-dots li button{
+    width: 20px;
+    height: 20px;
+    background-color: #2eb9fa;
+    border-radius: 50%;
+    font-size: 0;
+}
+.slick-dots li.slick-active button{
+    background-color: aliceblue;
+}
+.slide{
+   
+    background-color: #dfc5ff;
+    height: 492px;
+    margin: 0 auto;
+    position: relative;
+}
+.mWrap{
+    margin: 0 auto;
+    height: 492px;
+    width: 732px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.mdBox{
+    text-align: center;
+}
+.mdBox img{
+    width: 100%;
+   height: 492px;
+}
+footer{
+    background-color: #ffdaa6;
+    margin-top: 110px;
+
+}
+.fWrap{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+h4{
+   position: relative;
+   top: 25px;
+
+}
+h4 img{
+    width: 216px;
+    height: 54px;
+}
+.fWrap .b{
+    width: 100%;
+    border-bottom: 1px solid #fff5de;
+}
+.f{
+    font-size: 14px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-evenly;
+    color: #737373;
+}
+.f li{
+    margin-bottom: 5px;
+}
+.fInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.fBox{
+    width: 260px;
+    margin: 20px 0;
+}
+.fTit{
+    color: #737373;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.fTxt li{
+    margin-top: 10px;
+    color: #737373;
+    font-size: 12px;
+}
+.fTxt .fIcon{
+    font-size: 16px;
+    font-weight: bold;
+}
+.fTxt .fIcon img{
+    width: 15px;
+    height: 15px;
+}
+.fTxt .big{
+    font-size: 16px ;
+    font-weight: bold;
+}
+.fWrap .fTit:nth-child(3){
+    margin-top: 20px;
+}
+.fWrap .fBox .bank{
+    background-image: url(../images/arr_sel.png);
+    background-repeat: no-repeat;
+    background-position:  132px center;
+    width: 150px;
+    margin-top: 20px;
+    background-color: #fff5de;
+    border: 1px solid #ffdaa6;
+    color: #2eb9fa;
+    margin-bottom: 50px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 5px;
+}
+.lang{
+    list-style: none;
+    border: 1px solid #ffdaa6;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background-color: #fff5de;
+    display: none;
+    
+}
+.lang li{
+    border: 1px solid #ffdaa6;
+}
+footer .copy{
+    background-color: #2eb9fa;
+    width: 100%;
+    height: 100px;
+}
+.copy .cop{
+    
+    color: #fff5de;
+    font-size: 16px;
+    margin-left: 50px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+    
+
+
