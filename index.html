@@ -321,16 +321,25 @@
             </ul>
             <div class="tab">
                 <div class="tabWr">
-                    <video>
+                   <div class="vif"><iframe width="1180" height="664" src="https://www.youtube.com/embed/x-aTG2pZKB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="vif"><iframe width="1180" height="664" src="https://www.youtube.com/embed/bc0sFLeatQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="vif"><iframe width="1180" height="664" src="https://www.youtube.com/embed/RnOFxVvI4rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="vif"><iframe width="423" height="752" src="https://www.youtube.com/embed/G1IoGfNyLBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="vif"><iframe width="1180" height="664" src="https://www.youtube.com/embed/7RTC2rmKaH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="vif"><iframe width="1168" height="664" src="https://www.youtube.com/embed/c1hVFV9fe14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    
+                    <!-- <video>
                     <source src="videos/v01.mp4" muted autoplay>
                     </video>
+                -->
                 </div><!--tabWr-->
                 <ul class="videoList">
-                    <li class="active">video01<span class="key">v01.mp4</span></li>
-                    <li>video02<span class="key">v02.mp4</span></li>
-                    <li>video03<span class="key">v03.mp4</span></li>
-                    <li>video04<span class="key">v04.mp4</span></li>
-                    <li>video05<span class="key">v05.mp4</span></li>
+                    <li class="active">video01</li>
+                    <li>video02</li>
+                    <li>video03</li>
+                    <li>video04</li>
+                    <li>video05</li>
+                    <li>video06</li>
 
                 </ul>
             </div><!--tab-->
@@ -518,9 +527,16 @@
         }).on('click',function(){
             $('.film').get(0).currentTime = 0;
         });
+        $('.tabWr').children().hide().first().show();
 
 
-$('.videoList li').on('click',function(){
+
+        $('.videoList li').on('click',function(){
+
+            let i =$(this).index();
+            $('.tabWr').children().eq(i).show().siblings().hide();
+        });
+/*$('.videoList li').on('click',function(){
     let sources = $(this).find('.key').text();
     $('.tabWr').find('video').remove();
     $('.tabWr').append('<video></video>');
@@ -535,7 +551,7 @@ $('.videoList li').on('click',function(){
     $('.tabWr video').get(0).play();    
     let txt =$(this).text();
     $(this).addClass('active').siblings().removeClass();
-});
+});*/
 
     </script>
     </body>

@@ -768,15 +768,15 @@ figure iframe{
 }
 .video .tab{
     width: 1320px;
-    height: 800px;
+    height: 500px;
     background-color: #fdb9b9;
     border-radius: 25px;
     margin: 0 auto;
     position: relative;
     top: -20px;
     left: 0;
-    padding-top: 150px;
-    box-sizing: border-box;
+    padding: 160px 0;
+
 
 }
 
@@ -795,18 +795,33 @@ figure iframe{
 .tabWr{
     border: 5px solid #fed1c1;
     width: 900px;
-    height: 505px;
     background-color: rgba(255,255,255,0.4);
     margin: 0 auto;
     border-radius: 25px;
+    height: 100%;
+
     
 }
+.tabWr .vif{
+    display: flex;
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+    justify-content: center;
 
-.tabWr video{
+}
+
+.tabWr .vif iframe{
+    height: 100%;
+    border-radius: 25px;
+}
+
+/*.tabWr video{
     width: 100%;
     border-radius: 25px;
 
 }
+*/
 .videoList .key{
     display: none;
 }
